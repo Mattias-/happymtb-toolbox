@@ -39,8 +39,8 @@ function applyFilter(rules){
       //$(e).css('visibility', 'hidden');
     } else {
       if($(e).find('#hide_thread, #hide_user').length == 0){
-        var hide = $('<i id="hide_thread" class="icon-collapse-alt"></i>');
-        var hide2 = $('<i id="hide_user" class="icon-collapse-alt" style="margin-right:5px"></i> ');
+        var hide = $('<i id="hide_thread" class="icon-collapse-alt" style="cursor:pointer;"></i>');
+        var hide2 = $('<i id="hide_user" class="icon-collapse-alt" style="margin-right:5px;cursor:pointer;"></i> ');
         hide.click(function(){
           applyFilter([{'thread': thread}]); // Hack, can not call loaded
           addRule({'thread': thread}, updateRuleTable);
