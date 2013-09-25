@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "HappyMTB Toolbox",
   "version": "0.4",
-  "description": "Adding useful features to HappyMTB.org",
+  "description": "Användbara funktioner till HappyMTB.org",
   "permissions": ["storage", "tabs", "http://happymtb.org/*"],
   "content_scripts": [
     {
