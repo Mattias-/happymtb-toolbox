@@ -1,0 +1,44 @@
+<!-- Modal -->
+<div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Filterinställningar</h4>
+      </div>
+      <div class="modal-body" style="text-align:left">
+        <h4>Aktiva filter</h4>
+        <table class="table table-condensed table-striped" id="rule-table">
+          <thead>
+            <tr>
+              <th>Filtertyp</th>
+              <th>Värde</th>
+              <th>Ändra</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+        <hr>
+        <h4>Lägg till manuellt</h4>
+        <form class="form-inline" id="add_rule_form" role="form">
+          <div class="form-group">
+            <select name="rule" class="form-control">
+              <option value="title_contains">Titel innehåller</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="filter_value"placeholder="Text">
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-success">Lägg till</button>
+          </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Stäng</button>
+      <button type="button" class="btn btn-primary" id="save_rule_modal">Spara ändringar</button>
+    </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
