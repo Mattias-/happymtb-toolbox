@@ -9,6 +9,7 @@ function loaded(){
     }
     applyFilter(rules);
   });
+  $(".PhorumNavBlock div").append('<a class="PhorumNavLink" href="http://happymtb.org/forum/control.php/1/panel=subthreads">Bevakade ämnen</a>');
 }
 
 function applyFilter(rules){
